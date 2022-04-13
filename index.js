@@ -22,16 +22,83 @@ const tiempo = [
          {cantidad:"1 mes",costo:-6000}
 ]
 
-const servicioselec = servicios.map((el) => el.nombre === seleccservicio)
-const defcliente = cliente.map((el) => el.condicion === condicioncliente)
-const canttiempo = tiempo.map((el) => el.cantidad === selecctiempo)
-const mitadcotizacion = servicioselec.concat(defcliente)
-const cotizacion = mitadcotizacion.concat(canttiempo)
-const total = cotizacion.reduce((acc, el) => acc + el.costo, 0)
-console.log(total)
+// const servicioselec = servicios.map((el) => el.nombre === seleccservicio)
+// const defcliente = cliente.map((el) => el.condicion === condicioncliente)
+// const canttiempo = tiempo.map((el) => el.cantidad === selecctiempo)
+// const mitadcotizacion = servicioselec.concat(defcliente)
+// const cotizacion = mitadcotizacion.concat(canttiempo)
+// const total = cotizacion.reduce((acc, el) => acc + el.costo, 0)
+// console.log(total)
+function empresa() {
+    return costo * 0.85
+}
+function particular() {
+    return costo * 1.10
+}
+function tipocliente1(servicio,empresa) {
+    for (const el of servicio){
+        empresa(el)
+    }
+}
+function tipocliente2(servicio,particular) {
+    for (const el of servicio){
+        particular(el)
+    }
+}
 
+function tiempo4dias() {
+    return costo * 1.25
+}
+function tiempo1mes() {
+    return costo * 0.70
+}
 
+function recargodias(servicio,tiempo4dias) {
+    for (const el of servicio ){
+        tiempo4dias(el)
+    }
+    
+}
+function descuentoodias(servicio,tiempo1mes) {
+    for (const el of servicio ){
+        tiempo1mes(el)
+    }
+    
+}
 
+const indexservicio = productos.indexOf(seleccservicio)
+const servicio =productos.slice(indexproducto,indexproducto)
 
+if (condicioncliente==="empresa" && selecctiempo==="4dias") {
+    tipocliente1()
+    recargodias()
+    alert(servicio)
+    
+} else if (condicioncliente==="empresa") {
+    tipocliente1()
+    alert(servicio)
+}
+ else if (selecctiempo==="4dias") {
+    recargodias()
+    alert(servicio)
+
+} else if (condicioncliente==="particular" && selecctiempo==="1mes") {
+        tipocliente2()
+        descuentoodias()
+        alert(servicio)
+    
+
+} else if (selecctiempo==="1mes") {
+    descuentoodias()
+    alert(servicio)
+
+} else if (condicioncliente==="particular") {
+    tipocliente2()
+    alert(servicio)
+    
+}
+else{
+    alert(servicio)
+}
 
 

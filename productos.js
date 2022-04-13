@@ -10,7 +10,8 @@ const productos =[
             {nombre:'lijadora', precio:27000}
 ]
 const indexproducto = productos.indexOf(entrada)
-const productosselec =productos.slice(indexproducto,indexproducto) 
+const productosselec =productos.slice(indexproducto,indexproducto)
+ 
 class Producto {
         constructor (nombre,precio){
             this.nombre= nombre
