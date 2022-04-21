@@ -66,8 +66,8 @@ function descuentoodias(servicio,tiempo1mes) {
     
 }
 
-const indexservicio = productos.indexOf(seleccservicio)
-const servicio =productos.slice(indexproducto,indexproducto)
+const indexservicio =servicios.indexOf(seleccservicio)
+const servicio =servicios.slice(indexservicio,indexservicio)
 
 if (condicioncliente==="empresa" && selecctiempo==="4dias") {
     tipocliente1()
