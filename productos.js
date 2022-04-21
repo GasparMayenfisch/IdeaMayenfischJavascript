@@ -59,3 +59,9 @@ function recargovisa(carrito,recargomediodepago3) {
     
 }
 
+let productonuevo = { nombre: "x",descripcion:"x", precio:x };
+let contenedor = document.createElement("section");
+contenedor.innerHTML = `<h3>${productonuevo.nombre}</h3>
+<p> Producto: ${productonuevo.descripcion}</p>
+<b> $ ${productonuevo.precio}</b>`;
+document.body.appendChild(contenedor);
