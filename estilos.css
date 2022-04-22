@@ -108,3 +108,10 @@ h2{
           color: red;
           font-size: 18px;
   }
+
+.texttiempo{
+      width: 500px;
+}
+.form-check-label{
+      color: white;
+}

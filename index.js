@@ -71,7 +71,7 @@ boton4.addEventListener("click",seleccionservicio4)
 boton5.addEventListener("click",seleccionservicio5)
 boton6.addEventListener("click",seleccionservicio6)
 function seleccionservicio1(){
-    const indexservicio =servicios.indexOf (`Mantenimiento de motores`)
+    const indexservicio =servicios.indexOf ("Mantenimiento de motores")
     const servicio =servicios.slice(indexservicio,indexservicio)
     if (condicioncliente==="empresa" && cantidadtiempo==="4dias") {
         tipocliente1()
@@ -106,7 +106,7 @@ function seleccionservicio1(){
     }
 }
 function seleccionservicio2(){
-    const indexservicio =servicios.indexOf(`Limpieza de bateas`)
+    const indexservicio =servicios.indexOf("Limpieza de bateas")
 const servicio =servicios.slice(indexservicio,indexservicio)
 if (condicioncliente==="empresa" && cantidadtiempo==="4dias") {
     tipocliente1()
@@ -141,7 +141,7 @@ else{
 }
 }
 function seleccionservicio3(){
-    const indexservicio =servicios.indexOf(`Inspeccion y regulacion sistemas`)
+    const indexservicio =servicios.indexOf("Inspeccion y regulacion sistemas")
 const servicio =servicios.slice(indexservicio,indexservicio)
 if (condicioncliente==="empresa" && cantidadtiempo==="4dias") {
     tipocliente1()
@@ -176,7 +176,7 @@ else{
 }
 }
 function seleccionservicio4(){
-    const indexservicio =servicios.indexOf(`Mantenimiento sistemas de vapor,agua y gas`)
+    const indexservicio =servicios.indexOf("Mantenimiento sistemas de vapor,agua y gas")
     const servicio =servicios.slice(indexservicio,indexservicio)
     if (condicioncliente==="empresa" && cantidadtiempo==="4dias") {
         tipocliente1()
@@ -211,7 +211,7 @@ function seleccionservicio4(){
     }
 }
 function seleccionservicio5(){
-    const indexservicio =servicios.indexOf(`Revision de lineas de montaje`)
+    const indexservicio =servicios.indexOf("Revision de lineas de montaje")
     const servicio =servicios.slice(indexservicio,indexservicio)
     if (condicioncliente==="empresa" && cantidadtiempo==="4dias") {
         tipocliente1()
@@ -246,7 +246,7 @@ function seleccionservicio5(){
     }
 }
 function seleccionservicio6(){
-    const indexservicio =servicios.indexOf(`Revision y mantenimiento instalaciones electricas`)
+    const indexservicio =servicios.indexOf("Revision y mantenimiento instalaciones electricas")
     const servicio =servicios.slice(indexservicio,indexservicio)
     if (condicioncliente==="empresa" && cantidadtiempo==="4dias") {
         tipocliente1()
